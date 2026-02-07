@@ -1,0 +1,49 @@
+/* Admin Styles for Song Details Meta Box */
+.song-details-fields {
+    max-width: 100%;
+}
+
+.song-details-fields p {
+    margin-bottom: 15px;
+}
+
+.song-details-fields label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.song-details-fields input[type="text"],
+.song-details-fields input[type="url"],
+.song-details-fields textarea {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.song-details-fields input[type="text"]:focus,
+.song-details-fields input[type="url"]:focus,
+.song-details-fields textarea:focus {
+    border-color: #0073aa;
+    outline: none;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+.song-details-fields textarea {
+    resize: vertical;
+}
+
+.song-details-fields small {
+    display: block;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#song_chordpro {
+    background: #f9f9f9;
+}

@@ -1,0 +1,161 @@
+/* Song Details Display Styles */
+.song-details-display {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.song-field {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.song-field:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.song-field strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.song-field a {
+    color: #0073aa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.song-field a:hover {
+    color: #005177;
+    text-decoration: underline;
+}
+
+.song-tabs,
+.song-gear {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+}
+
+/* ChordPro Chart Styles */
+.chordpro-chart {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.view-chart-btn {
+    background: #2271b1;
+    color: #fff;
+    border: 2px solid #2271b1;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.view-chart-btn:hover {
+    background: #135e96;
+    border-color: #135e96;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+}
+
+.view-chart-btn.active {
+    background: #d63638;
+    border-color: #d63638;
+}
+
+.view-chart-btn.active:hover {
+    background: #b32d2e;
+    border-color: #b32d2e;
+}
+
+.chordpro-content {
+    margin-top: 15px;
+    animation: slideDown 0.3s ease;
+}
+
+.print-chart-btn {
+    background: #50575e;
+    color: #fff;
+    border: 2px solid #50575e;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.print-chart-btn:hover {
+    background: #3c434a;
+    border-color: #3c434a;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chordpro-text {
+    background: #fff;
+    border: 2px solid #8c8f94;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    color: #1e1e1e;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .song-details-display {
+        padding: 15px;
+    }
+    
+    .song-tabs,
+    .song-gear,
+    .chordpro-text {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
