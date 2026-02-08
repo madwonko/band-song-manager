@@ -280,6 +280,14 @@ ln -s $(pwd) /path/to/wordpress/wp-content/plugins/band-song-manager
 
 ## Changelog
 
+### Version 1.1.0 (2025-02-08)
+- ✨ Added Key field
+- ✨ Added Tempo (BPM) field
+- ✨ Added Tags system (Genre, Mood, Difficulty, Tags)
+- ✨ Added ChordPro support
+- ✨ Added Print ChordPro functionality
+- 🎨 Enhanced frontend display with new fields
+- 
 ### Version 1.0.0 (2025-02-07)
 - 🎉 Initial release
 - ✅ Song catalog management with full CRUD operations
