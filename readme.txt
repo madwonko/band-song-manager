@@ -1,143 +1,91 @@
 === Band Song Manager ===
 Contributors: madwonko
-Tags: band, music, songs, setlist, catalog, repertoire, musician
+Tags: band, music, songs, chordpro, setlist, performance
 Requires at least: 5.0
-Tested up to: 6.4
-Requires PHP: 7.2
-Stable tag: 1.0.0
+Tested up to: 6.9
+Stable tag: 2.0.0
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A comprehensive song catalog management plugin for bands and musicians.
+Comprehensive song catalog management for bands and musicians with ChordPro support, performance tracking, and complete metadata.
 
 == Description ==
 
-A comprehensive song catalog management plugin for bands and musicians. Organize your repertoire, track performance history, and display your song list to fans with customizable filtering and search capabilities.
+Band Song Manager is a comprehensive WordPress plugin for bands and musicians to organize their repertoire with complete metadata tracking, performance history, and beautiful ChordPro chart rendering.
 
 = Features =
 
-* ✓ Complete song catalog management (title, artist, key, tempo, duration)
-* ✓ Performance tracking with date and venue history
-* ✓ Tag-based categorization (genre, mood, difficulty, etc.)
-* ✓ Public song list display with search and filtering
-* ✓ Sortable columns (title, artist, key, tempo, duration)
-* ✓ Set list planning and organization
-* ✓ Custom fields support
-* ✓ Export capabilities (CSV, PDF)
-* ✓ Responsive design for mobile and desktop
+* **Complete Song Catalog** - Store title, artist, key, tempo, duration, and notes
+* **ChordPro Support** - Import .cho files with automatic metadata extraction
+* **Bulk Import** - Import up to 20 songs at once
+* **Performance Tracking** - Log dates and venues for each song
+* **Taxonomies** - Organize by Genre, Mood, Difficulty, and Tags
+* **Recording URLs** - Link to original and rehearsal recordings
+* **Tabs & Gear Notes** - Store tabs, charts, and pedalboard settings
+* **Beautiful Display** - Professional rendering with collapsible sections
+* **Shortcodes** - Display songs anywhere with `[song_details]` and `[song_chordpro]`
+
+= Perfect For =
+
+* Cover Bands - Track your entire repertoire
+* Music Teachers - Build lesson libraries by difficulty
+* Solo Artists - Catalog originals and covers
+* Musicians - Manage performance history and gear setups
 
 == Installation ==
 
-1. Upload the `band-song-manager` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Navigate to 'Band Songs' in the admin menu to start adding songs
-4. Go to Settings → Band Song Manager to configure display options
-
-== Shortcode Usage ==
-
-= Full Song List =
-`[band_songs]`
-
-= Filtered by Tag =
-`[band_songs tag="rock"]`
-
-= Show Specific Columns =
-`[band_songs columns="title,artist,key"]`
-
-= Limit Number of Songs =
-`[band_songs limit="20"]`
-
-= Multiple Parameters =
-`[band_songs tag="blues" columns="title,key,tempo" limit="10"]`
-
-== Configuration ==
-
-Go to Settings → Band Song Manager to configure display options:
-
-* Default visible columns
-* Songs per page
-* Enable/disable search
-* Enable/disable filters
-* Custom tag categories
-* Date format preferences
+1. Upload the plugin files to `/wp-content/plugins/band-song-manager/`
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Go to Settings → Permalinks and click "Save Changes" to flush rewrite rules
+4. Use the Band Songs menu to start adding songs
 
 == Frequently Asked Questions ==
 
-= How do I add songs to my catalog? =
+= How do I display a song on my site? =
 
-Navigate to 'Band Songs' in your WordPress admin menu and click "Add New Song". Fill in the song details including title, artist, key, tempo, and any custom fields you've configured.
+Use the shortcode `[song_details id="123"]` where 123 is your song ID. You can find the song ID in the admin song list or while editing a song.
 
-= Can I export my song list? =
+= Can I import existing ChordPro files? =
 
-Yes, you can export your entire catalog or filtered results to CSV or PDF format from the main song list page.
+Yes! Go to Band Songs → Import ChordPro to upload single or multiple .cho files. The plugin will automatically extract title, artist, key, tempo, and lyrics.
 
-= How do I display songs on my website? =
+= What ChordPro directives are supported? =
 
-Use the `[band_songs]` shortcode on any page or post. You can customize the display using the parameters listed in the Shortcode Usage section.
+The plugin recognizes: {title:}, {artist:}, {year:}, {key:}, {tempo:}, {capo:}, {comment:}, and chord annotations like [Am], [G7], etc.
 
-= Can I track when and where I've performed songs? =
+= How do I track performances? =
 
-Yes, each song has a performance history feature where you can log dates and venues.
-
-= Is the plugin mobile-friendly? =
-
-Yes, both the admin interface and public display are fully responsive and work great on mobile devices.
-
-= Can I organize songs into setlists? =
-
-Yes, the plugin includes set list planning and organization features.
+When editing a song, use the "Performance Tracking" box in the sidebar to add dates and venues.
 
 == Screenshots ==
 
-1. Song catalog management interface
-2. Add/Edit song screen with all available fields
-3. Public song list display with search and filters
-4. Settings page for customization
-5. Performance history tracking
+1. Song details admin interface with all fields
+2. ChordPro import page
+3. Frontend song display with collapsible sections
+4. Performance tracking interface
 
 == Changelog ==
 
+= 2.0.0 =
+* Merged edition combining all features from both previous versions
+* Added performance tracking with dates and venues
+* Added taxonomies (Genre, Mood, Difficulty, Tags)
+* Added Key, Tempo, Duration, Original Artist fields
+* Improved ChordPro rendering with chords above lyrics
+* Enhanced import supporting more metadata extraction
+* Better post type naming with bsm_ prefix
+* Professional admin interface with grid layout
+* Added View Details modal in plugins page
+
 = 1.0.0 =
 * Initial release
-* Song catalog management
-* Performance tracking
-* Tag-based categorization
-* Public display with shortcodes
-* Search and filtering
-* Export to CSV/PDF
-* Responsive design
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-Initial release of Band Song Manager.
-
-== Support ==
-
-For support, visit wonkoworld.com
+= 2.0.0 =
+Major update with merged features. Note: This version uses bsm_song post type instead of song. Your existing songs from previous versions will remain but won't automatically migrate.
 
 == Additional Info ==
 
-This plugin is perfect for:
-* Cover bands managing their repertoire
-* Original artists tracking their catalog
-* Music teachers organizing lesson materials
-* Wedding bands displaying available songs
-* Any musician wanting to showcase their song list online
-```
-
----
-
-**Installation Instructions:**
-
-1. **Replace** the header section in your existing `band-song-manager.php` file with File 1 header
-2. **Create** a new file called `readme.txt` in your plugin's root directory
-3. **Copy** all the content from File 2 into `readme.txt`
-4. **Save** both files
-
-**Your plugin folder structure should look like:**
-```
-/wp-content/plugins/band-song-manager/
-    ├── band-song-manager.php
-    ├── readme.txt
-    └── [your other plugin files]
+For more information, visit [github.com/madwonko/band-song-manager](https://github.com/madwonko/band-song-manager)

@@ -5,6 +5,11 @@
  * This template is used when the theme doesn't have its own single-song.php file.
  */
 
+// Prevent direct access
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 get_header(); ?>
 
 <div id="primary" class="content-area" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
