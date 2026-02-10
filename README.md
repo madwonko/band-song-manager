@@ -6,8 +6,7 @@
 
 A comprehensive song catalog management plugin for bands and musicians. Organize your repertoire, track performance history, and display your song list to fans with customizable filtering and search capabilities.
 
-![Band Song Manager](https://via.placeholder.com/1200x400/1F2937/10B981?text=Band+Song+Manager)
-*Screenshot placeholder - replace with actual screenshot*
+![Band Song Manager](https://wonkoworld.com/wp-content/uploads/2026/02/2026-02-10-11_34_07-WP-Plugins-File-Explorer.png)
 
 ## Features
 
